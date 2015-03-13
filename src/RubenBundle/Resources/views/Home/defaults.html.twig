@@ -1,0 +1,10 @@
+{% extends '::base.html.twig' %}
+
+{% block content %}
+
+    {{ include('partials/home/data-table.html.twig', { 'reviews': reviews }) }}
+
+<script type="text/javascript">
+    runDataTable();
+</script>
+{% endblock %}

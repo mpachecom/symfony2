@@ -1,0 +1,21 @@
+default:
+    context:
+        class: FeatureContext
+    extensions:
+        Behat\Symfony2Extension\Extension:
+            mink_driver: true
+            kernel:
+                env: test
+                debug: true
+        Behat\MinkExtension\Extension:
+            files_path: app/Test/DefaultReviews
+            base_url: 'http://127.0.0.1:8000'
+            default_session: selenium2
+            javascript_session: selenium2
+            browser_name: chrome
+            goutte: ~
+            selenium2:
+              wd_host: "http://127.0.0.1:4444/wd/hub"
+    paths:
+        features: %behat.paths.base%/src
+        bootstrap: %behat.paths.features%/Context

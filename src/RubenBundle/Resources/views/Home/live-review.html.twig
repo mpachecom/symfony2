@@ -1,0 +1,28 @@
+{% extends '::base.html.twig' %}
+
+{% block content %}
+
+<div id="live-review-score">
+    Write your review and check if it's positive or not against your positive and negative words
+</div>
+
+<div class="center">
+
+
+    <textarea rows="10" cols="50" id="review" name="review"></textarea>
+    </br>
+
+    <input type="text" id="negative_words" placeholder="bad,horrible...">
+    <input type="text" id="positive_words" placeholder="super,happy...">
+
+    <input type="button" id="checkReview" value="check" >
+    <input type="button" id="resetReview" value="reset" >
+
+    <div id="reviews_contanier"></div>
+
+
+    {% include "error.html.twig" %}
+
+</div>
+{% endblock %}
+

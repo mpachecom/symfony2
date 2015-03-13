@@ -1,0 +1,75 @@
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+a {
+    color: #428bca;
+    text-decoration: none;
+}
+
+#content {
+    width:90%;
+    margin:0 auto;
+}
+
+#form div {
+    padding-bottom: 15px;
+
+}
+
+#form div label {
+    padding-right: 15px;
+
+}
+
+.blue{
+    color: #2973B8;
+}
+
+.orange{
+    color: #E2791E;
+}
+
+
+.garnet{
+    color: #A5171A;
+}
+
+
+.center{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.homeTitle{
+    width:50%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.homeOptions{
+    margin: 0 auto;
+    text-align:center;
+    margin-bottom: 50px
+}
+
+
+.homeOptions div{
+    display: inline-block;
+}
+
+#error{
+    margin: 0 auto;
+    text-align: center;
+    color: red;
+    margin-top: 20px
+}
+
+#live-review-score{
+    margin: 0 auto;
+    text-align: center;
+    color: #2973B8;
+    padding-bottom: 10px
+}

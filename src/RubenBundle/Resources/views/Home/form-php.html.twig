@@ -1,0 +1,20 @@
+{% extends '::base.html.twig' %}
+
+{% block content %}
+
+
+    <div  class="center">
+        {{ form_start(form, {'attr': {'id': 'upload_form'}}) }}
+        {{ form_widget(form) }}
+        {{ form_end(form) }}
+    </div>
+
+
+
+
+    <div id="formcont"> </div>
+
+    {% include "error.html.twig" %}
+
+{% endblock %}
+

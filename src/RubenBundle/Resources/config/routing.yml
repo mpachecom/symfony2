@@ -1,0 +1,25 @@
+ruben_homepage:
+    path:     /
+    defaults: { _controller: RubenBundle:Home:index }
+
+
+load_default:
+    path:      /load-default-reviews/
+    defaults:  { _controller: RubenBundle:Home:loadDefaultReviews }
+
+
+load_manual:
+        path:      /load-manual-php/
+        defaults:  { _controller: RubenBundle:Home:uploadPhp }
+
+load_manual_js:
+        path:      /load-manual-js/
+        defaults:  { _controller: RubenBundle:Home:uploadJs }
+
+load_manual_ajax:
+        path:      /load-manual-ajax/
+        defaults:  { _controller: RubenBundle:Home:uploadAjax }
+
+live_review:
+        path:      /live-review/
+        defaults:  { _controller: RubenBundle:Home:liveReview }

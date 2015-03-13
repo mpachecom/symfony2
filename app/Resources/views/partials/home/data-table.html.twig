@@ -1,0 +1,58 @@
+
+
+    <table id="reviews-container" class="display" cellspacing="0" width="100%">
+        <thead>
+        <tr>
+            <th>Hotel Id</th>
+            <th>Id</th>
+            <th>Review</th>
+            <th>Positive</th>
+            <th>Negative</th>
+            <th>Score</th>
+        </tr>
+        </thead>
+
+        <tfoot>
+        <tr>
+            <th>Hotel Id</th>
+            <th>Id</th>
+            <th>Review</th>
+            <th>Positive</th>
+            <th>Negative</th>
+            <th>Score</th>
+        </tr>
+        </tfoot>
+
+        <tbody>
+        {% if reviews is defined %}
+            {% for review in reviews %}
+                <tr>
+                    <td>{{ review.getHotelId() }}</td>
+                    <td>{{ review.getId() }}</td>
+                    <td style="width: 56%;">{{ review.getReview() }}</td>
+                    <td>
+                        <ul>
+                            {% for good in review.getPositives() %}
+                                <li>
+                                    {{ good }}
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            {% for good in review.getNegatives() %}
+                                <li>
+                                    {{ good }}
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </td>
+                    <td>{{ review.getScore() }}</td>
+                </tr>
+            {% endfor %}
+        {% endif %}
+
+        </tbody>
+    </table>
+

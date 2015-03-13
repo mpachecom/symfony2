@@ -1,0 +1,11 @@
+phpunits
+/bin/behat
+behat -dl
+php app/console server:run
+bin/behat
+
+npm install phantom js
+
+bin/robo build
+
+phpunits -c app/

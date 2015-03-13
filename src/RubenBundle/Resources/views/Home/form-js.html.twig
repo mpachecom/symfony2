@@ -1,0 +1,16 @@
+{% extends '::base.html.twig' %}
+
+{% block content %}
+
+<div class="center">
+    <span>load reviews:</span> <input type="file" name="reviews" id="reviews" />
+    </br>
+    <span>load criteria:</span> <input type="file" name="criteria" id="criteria"/>
+</div>
+
+    <div id="bodyReviews"></div>
+
+    {% include "error.html.twig" %}
+
+{% endblock %}
+

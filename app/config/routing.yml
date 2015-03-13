@@ -1,0 +1,4 @@
+ruben:
+    resource: "@RubenBundle/Resources/config/routing.yml"
+    prefix:   /
+
