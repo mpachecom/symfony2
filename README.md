@@ -1,10 +1,4 @@
-This is a symfony2 project.
-
-- Behalt 
-- Mink
-- dom-crawler
-- codegyre
-
+This is a symfony2 project
 
 Instructions
 - run composer 
